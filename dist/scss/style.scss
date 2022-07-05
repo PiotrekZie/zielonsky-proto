@@ -1,12 +1,12 @@
 // Główne
-$color_1: #15191C;
-$color_2: #1D232A;
-$color_3: #2C343A;
-$color_4: #95999C;
-$color_5: #D4D4D4;
-$color_6: #E7E7E7;
-$color_7: #F3F3F3;
-$color_8: #FFFFFF;
+$color_1: #15191C; //100
+$color_2: #1D232A; //90
+$color_3: #2C343A; //80
+$color_4: #95999C; //50
+$color_5: #D4D4D4; //20
+$color_6: #E7E7E7; //10
+$color_7: #F3F3F3; //05
+$color_8: #FFFFFF; //Biały
 
 // Funkcyjne
 $fcolor_1: #0480DC;
@@ -15,7 +15,7 @@ $fcolor_3: #004B83;
 
 
 body, html {
-    background-color: $color_1;
+    background-color: $color_2;
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
