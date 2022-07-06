@@ -17,8 +17,6 @@ $fcolor_3: #004B83;
 $lcolor_1: #1AB060;
 $lcolor_2: #F83636; 
 
-
-
 body, html {
     background-color: $color_2;
     color: $color_8;
@@ -160,13 +158,13 @@ body, html {
 
                     border-radius: 16px 16px 0 0;
                     background-color: $color_3;
+                    -webkit-box-shadow: inset 0px 0px 50px 2px rgba(29, 35, 42, 1);
+                    -moz-box-shadow: inset 0px 0px 50px 2px rgba(29, 35, 42, 1);
+                    box-shadow: inset 0px 0px 50px 2px rgba(29, 35, 42, 1);
                     .title {
                         margin: 0;
                         padding: 55px 38px;
-
                         width: 55%;
-                        
-                        overflow: hidden;
                         span {
                             color: $lcolor_1;
                         }
@@ -194,6 +192,153 @@ body, html {
                         }                
                     }
                 }
+                .experience {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0;
+                    margin: 0;
+                    width: 100%;
+                    position: relative;
+                    .lines {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        height: 100%;
+                        margin: auto;
+                        .line1 {
+                            position: absolute;
+                            width: 1px;
+                            height: 100%;
+                            left: 50%;
+                            background: rgba(255, 255, 255, 0.1);
+                            overflow: hidden;
+                            &::after {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                height: 15vh;
+                                width: 100%;
+                                top: -50%;
+                                left: 0;
+                                background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+                                -webkit-animation: drop 7s 0s infinite;
+                                        animation: drop 7s 0s infinite;
+                                -webkit-animation-fill-mode: forwards;
+                                        animation-fill-mode: forwards;
+                                -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+                                        animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+                              }
+                        }
+                        .line2 {
+                            position: absolute;
+                            width: 1px;
+                            height: 100%;
+                            left: 20%;
+                            background: rgba(255, 255, 255, 0.1);
+                            overflow: hidden;
+                            &::after {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                height: 15vh;
+                                width: 100%;
+                                top: -50%;
+                                left: 0;
+                                background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+                                -webkit-animation: drop 9s 0s infinite;
+                                        animation: drop 9s 0s infinite;
+                                -webkit-animation-fill-mode: forwards;
+                                        animation-fill-mode: forwards;
+                                -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+                                        animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+                                }
+                            }
+                        .line3 {
+                            position: absolute;
+                            width: 1px;
+                            height: 100%;
+                            left: 80%;
+                            background: rgba(255, 255, 255, 0.1);
+                            overflow: hidden;
+                            &::after {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                height: 15vh;
+                                width: 100%;
+                                top: -50%;
+                                left: 0;
+                                background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+                                -webkit-animation: drop 9.5s 0s infinite;
+                                        animation: drop 9s 0s infinite;
+                                -webkit-animation-fill-mode: forwards;
+                                        animation-fill-mode: forwards;
+                                -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+                                        animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+                                }
+                        }
+                      }
+                    .skill {
+                        width: 556px;
+                        height: 128px;
+                        margin: 16px;
+                        border: 1px solid red;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        z-index: 1;
+                        .skill1 {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            cursor: pointer;
+                            img {
+                            width: 80px;
+                            }
+                            p {
+                                margin: 0;
+                                padding: 0;
+                            }
+                        }
+                        .skill2 {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            cursor: pointer;
+                            img {
+                            width: 80px;
+                            }
+                            p {
+                                margin: 0;
+                                padding: 0;
+                            }
+                        }
+                        .skill3 {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            cursor: pointer;
+                            img {
+                            width: 80px;
+                            }
+                            p {
+                                margin: 0;
+                                padding: 0;
+                            }
+                        }
+                    }
+                    .mypic {
+                        display: flex;
+                        align-items: flex-end;
+                        margin: 1px 16px;
+                        img {
+                            width: 100%;
+                            height: 150px;
+                            opacity: .9;
+                        }
+                    }                    
+                }
             }
             #content2 {
                 width: 15vw;
@@ -206,3 +351,21 @@ body, html {
         }
     }
 }
+
+@-webkit-keyframes drop {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 110%;
+    }
+  }
+  
+  @keyframes drop {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 110%;
+    }
+  }
