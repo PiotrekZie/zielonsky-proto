@@ -149,7 +149,7 @@ body, html {
 }
 #wrapper #container #mainmenu #content .experience {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0;
   margin: 0;
   width: 100%;
@@ -239,7 +239,6 @@ body, html {
   width: 556px;
   height: 128px;
   margin: 16px;
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -258,6 +257,12 @@ body, html {
   margin: 0;
   padding: 0;
 }
+#wrapper #container #mainmenu #content .experience .skill .skill1:hover {
+  font-weight: 500;
+  -webkit-animation: Wysuwanie 1s infinite alternate;
+          animation: Wysuwanie 1s infinite alternate;
+  transition: 1s ease-out;
+}
 #wrapper #container #mainmenu #content .experience .skill .skill2 {
   display: flex;
   flex-direction: column;
@@ -270,6 +275,12 @@ body, html {
 #wrapper #container #mainmenu #content .experience .skill .skill2 p {
   margin: 0;
   padding: 0;
+}
+#wrapper #container #mainmenu #content .experience .skill .skill2:hover {
+  font-weight: 500;
+  -webkit-animation: Wysuwanie 1s infinite alternate;
+          animation: Wysuwanie 1s infinite alternate;
+  transition: 1s ease-out;
 }
 #wrapper #container #mainmenu #content .experience .skill .skill3 {
   display: flex;
@@ -284,15 +295,21 @@ body, html {
   margin: 0;
   padding: 0;
 }
+#wrapper #container #mainmenu #content .experience .skill .skill3:hover {
+  font-weight: 500;
+  -webkit-animation: Wysuwanie 1s infinite alternate;
+          animation: Wysuwanie 1s infinite alternate;
+  transition: 1s ease-out;
+}
 #wrapper #container #mainmenu #content .experience .mypic {
   display: flex;
   align-items: flex-end;
-  margin: 1px 16px;
+  margin: 0 16px;
 }
 #wrapper #container #mainmenu #content .experience .mypic img {
   width: 100%;
   height: 150px;
-  opacity: 0.9;
+  z-index: 1;
 }
 #wrapper #container #mainmenu #content2 {
   width: 15vw;
@@ -316,5 +333,53 @@ body, html {
   }
   100% {
     top: 110%;
+  }
+}
+@-webkit-keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes LewoPrawo {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-47%, -50%);
+  }
+}
+@keyframes LewoPrawo {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-47%, -50%);
+  }
+}
+@-webkit-keyframes Wysuwanie {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes Wysuwanie {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
   }
 }/*# sourceMappingURL=style.css.map */
