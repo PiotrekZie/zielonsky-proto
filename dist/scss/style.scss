@@ -109,7 +109,7 @@ body, html {
             box-shadow: 5px 5px 15px $color_1;
     
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
     
             margin: 0;
@@ -118,21 +118,11 @@ body, html {
             width: 100%;
             h1 {
                 text-shadow: 10px 10px 3px rgba(21, 25, 28, 1);
-            }
-            #burger {
-                width: 50px;
-                height: 50px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: 5px;
-                cursor: pointer;
-                
                 span {
-                    border: 3px solid $color_8;
-                    border-radius: 5px;
+                    color: $lcolor_1;
                 }
             }
+
         }
         #mainmenu {
             width: 100vw;
@@ -281,7 +271,7 @@ body, html {
                                         animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
                                 }
                         }
-                      }
+                    }
                     .skill {
                         width: 556px;
                         height: 128px;
@@ -374,6 +364,32 @@ body, html {
     }
 }
 
+@media screen and (min-width: 0px) and (max-width: 900px) {
+    #burger {
+        width: 50px;
+        height: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+
+        margin-left: 55px;
+        cursor: pointer;
+        transition: .2s ease-out;
+        span {
+            border: 3px solid $color_8;
+            border-radius: 5px;
+            transition: .2s ease-out;
+        }
+    }
+}
+@media screen and (min-width: 901px) and (max-width: 1440px) {
+    #burder {
+        display: none;
+        transition: 1s ease-out;
+    }
+}
 @-webkit-keyframes drop {
     0% {
       top: -50%;
