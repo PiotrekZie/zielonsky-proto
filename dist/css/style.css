@@ -1,7 +1,7 @@
 body, html {
   background-color: #1D232A;
   color: #FFFFFF;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -74,25 +74,18 @@ body, html {
   background-color: #1D232A;
   box-shadow: 5px 5px 15px #15191C;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin: 0;
   padding: 24px 58px;
   min-height: 10vh;
   width: 100%;
 }
-#wrapper #container #menutop #burger {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  cursor: pointer;
+#wrapper #container #menutop h1 {
+  text-shadow: 10px 10px 3px rgb(21, 25, 28);
 }
-#wrapper #container #menutop #burger span {
-  border: 3px solid #FFFFFF;
-  border-radius: 5px;
+#wrapper #container #menutop h1 span {
+  color: #1AB060;
 }
 #wrapper #container #mainmenu {
   width: 100vw;
@@ -105,19 +98,388 @@ body, html {
   width: 65vw;
   height: 496px;
   border-radius: 16px;
-  background-color: #2C343A;
+  background-color: #1AB060;
+  box-shadow: inset 0px 0px 50px 2px rgb(44, 52, 58);
 }
 #wrapper #container #mainmenu #content .contpic {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
   height: 336px;
   border-radius: 16px 16px 0 0;
+  background-color: #2C343A;
+  box-shadow: inset 0px 0px 50px 2px rgb(29, 35, 42);
+}
+#wrapper #container #mainmenu #content .contpic .title {
+  margin: 0;
+  padding: 55px 38px;
+  width: 55%;
+}
+#wrapper #container #mainmenu #content .contpic .title span {
   background-color: #1AB060;
-  box-shadow: inset 0px 0px 50px 2px rgb(44, 52, 58);
+}
+#wrapper #container #mainmenu #content .contpic .liststyle {
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+#wrapper #container #mainmenu #content .contpic .liststyle ul {
+  list-style-type: none;
+  padding: 0;
+}
+#wrapper #container #mainmenu #content .contpic .liststyle ul li {
+  border-bottom: 1px solid #95999C;
+  margin-bottom: 1rem;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+#wrapper #container #mainmenu #content .contpic .liststyle ul li a {
+  color: #1AB060;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+#wrapper #container #mainmenu #content .experience {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+}
+#wrapper #container #mainmenu #content .experience .lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+}
+#wrapper #container #mainmenu #content .experience .lines .line1 {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+#wrapper #container #mainmenu #content .experience .lines .line1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  -webkit-animation: drop 7s 0s infinite;
+  animation: drop 7s 0s infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+#wrapper #container #mainmenu #content .experience .lines .line2 {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  left: 20%;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+#wrapper #container #mainmenu #content .experience .lines .line2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  -webkit-animation: drop 9s 0s infinite;
+  animation: drop 9s 0s infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+#wrapper #container #mainmenu #content .experience .lines .line3 {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  left: 80%;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+#wrapper #container #mainmenu #content .experience .lines .line3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  -webkit-animation: drop 9.5s 0s infinite;
+  animation: drop 9s 0s infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+#wrapper #container #mainmenu #content .experience .skill {
+  width: 556px;
+  height: 128px;
+  margin: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+#wrapper #container #mainmenu #content .experience .skill .skill1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+#wrapper #container #mainmenu #content .experience .skill .skill1 img {
+  width: 80px;
+}
+#wrapper #container #mainmenu #content .experience .skill .skill1 p {
+  margin: 0;
+  padding: 0;
+}
+#wrapper #container #mainmenu #content .experience .skill .skill1:hover {
+  font-weight: 500;
+  -webkit-animation: Wysuwanie 1s infinite alternate;
+          animation: Wysuwanie 1s infinite alternate;
+  transition: 1s ease-out;
+}
+#wrapper #container #mainmenu #content .experience .skill .skill2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+#wrapper #container #mainmenu #content .experience .skill .skill2 img {
+  width: 80px;
+}
+#wrapper #container #mainmenu #content .experience .skill .skill2 p {
+  margin: 0;
+  padding: 0;
+}
+#wrapper #container #mainmenu #content .experience .skill .skill2:hover {
+  font-weight: 500;
+  -webkit-animation: Wysuwanie 1s infinite alternate;
+          animation: Wysuwanie 1s infinite alternate;
+  transition: 1s ease-out;
+}
+#wrapper #container #mainmenu #content .experience .skill .skill3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+#wrapper #container #mainmenu #content .experience .skill .skill3 img {
+  width: 80px;
+}
+#wrapper #container #mainmenu #content .experience .skill .skill3 p {
+  margin: 0;
+  padding: 0;
+}
+#wrapper #container #mainmenu #content .experience .skill .skill3:hover {
+  font-weight: 500;
+  -webkit-animation: Wysuwanie 1s infinite alternate;
+          animation: Wysuwanie 1s infinite alternate;
+  transition: 1s ease-out;
+}
+#wrapper #container #mainmenu #content .experience .mypic {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 16px;
+}
+#wrapper #container #mainmenu #content .experience .mypic img {
+  width: 100%;
+  height: 150px;
+  z-index: 1;
 }
 #wrapper #container #mainmenu #content2 {
   width: 15vw;
   height: 464px;
   border-radius: 16px;
   margin-left: 32px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #2C343A;
+  box-shadow: inset 0px 0px 50px 2px rgb(29, 35, 42);
+  -webkit-animation: goradol 1s infinite alternate;
+          animation: goradol 1s infinite alternate;
+  cursor: pointer;
+}
+#wrapper #container #mainmenu #content2 .frontcard {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#wrapper #container #mainmenu #content2 .frontcard.flipped {
+  transform: rotateY(180deg);
+}
+#wrapper #container #mainmenu #content2 .frontcard .firstcard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+#wrapper #container #mainmenu #content2 .frontcard .firstcard img {
+  width: 200px;
+  height: 180px;
+}
+#wrapper #container #mainmenu #content2 .frontcard .firstcard--front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#wrapper #container #mainmenu #content2 .frontcard .firstcard--front h2 {
+  color: #FFFFFF;
+  font-size: 32px;
+}
+#wrapper #container #mainmenu #content2 .frontcard .firstcard--back {
+  background: rgb(26, 176, 96);
+  background: linear-gradient(0deg, rgb(26, 176, 96) 0%, rgba(44, 52, 58, 0.95) 100%);
+  border-radius: 16px;
+  transform: rotateY(180deg);
+}
+#wrapper #container #mainmenu #content2 .frontcard .card__content {
+  width: 100%;
+  height: 100%;
+}
+#wrapper #container #mainmenu #content2 .frontcard .card__header {
+  position: relative;
+  padding: 30px 30px 40px;
+  display: flex;
+  justify-content: center;
+}
+#wrapper #container #mainmenu #content2 .frontcard .card__body {
+  position: relative;
+  padding: 30px 30px 40px;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 900px) {
+  #menutop h1 {
+    display: none;
+  }
+
+  #burger {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin-left: 55px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+  }
+  #burger span {
+    border: 3px solid #FFFFFF;
+    border-radius: 5px;
+    transition: 0.2s ease-out;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1440px) {
+  #burger {
+    display: none;
+    transition: 1s ease-out;
+  }
+}
+@-webkit-keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+@keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+@-webkit-keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes LewoPrawo {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-47%, -50%);
+  }
+}
+@keyframes LewoPrawo {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-47%, -50%);
+  }
+}
+@-webkit-keyframes Wysuwanie {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes Wysuwanie {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@-webkit-keyframes goradol {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes goradol {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }/*# sourceMappingURL=style.css.map */
