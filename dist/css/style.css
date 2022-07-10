@@ -315,8 +315,8 @@ body, html {
   align-items: center;
   background-color: #2C343A;
   box-shadow: inset 0px 0px 50px 2px rgb(29, 35, 42);
-  -webkit-animation: goradol 1s infinite alternate;
-          animation: goradol 1s infinite alternate;
+  -webkit-animation: goradol 1.5s infinite alternate;
+          animation: goradol 1.5s infinite alternate;
   cursor: pointer;
 }
 #wrapper #container #mainmenu #content2 .frontcard {
@@ -351,11 +351,44 @@ body, html {
   color: #FFFFFF;
   font-size: 32px;
 }
+#wrapper #container #mainmenu #content2 .frontcard .firstcard--front h2 span {
+  color: #1AB060;
+}
 #wrapper #container #mainmenu #content2 .frontcard .firstcard--back {
-  background: rgb(26, 176, 96);
-  background: linear-gradient(0deg, rgb(26, 176, 96) 0%, rgba(44, 52, 58, 0.95) 100%);
   border-radius: 16px;
   transform: rotateY(180deg);
+  position: relative;
+}
+#wrapper #container #mainmenu #content2 .frontcard .firstcard--back .wave {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #2C343A;
+}
+#wrapper #container #mainmenu #content2 .frontcard .firstcard--back .wave span {
+  position: absolute;
+  width: 550px;
+  height: 500px;
+  top: 100%;
+  transform: translate(-60%, -75%);
+}
+#wrapper #container #mainmenu #content2 .frontcard .firstcard--back .wave span:nth-child(1) {
+  -webkit-animation: Waves 5s linear infinite;
+          animation: Waves 5s linear infinite;
+  border-radius: 45%;
+  background: #1AB060;
+}
+#wrapper #container #mainmenu #content2 .frontcard .firstcard--back .wave span:nth-child(2) {
+  -webkit-animation: Waves 10s linear infinite;
+          animation: Waves 10s linear infinite;
+  border-radius: 40%;
+  background: #0063AC;
+}
+#wrapper #container #mainmenu #content2 .frontcard .firstcard--back .wave span:nth-child(3) {
+  -webkit-animation: Waves 15s linear infinite;
+          animation: Waves 15s linear infinite;
+  border-radius: 42%;
+  background: #004B83;
 }
 #wrapper #container #mainmenu #content2 .frontcard .card__content {
   width: 100%;
@@ -363,16 +396,42 @@ body, html {
 }
 #wrapper #container #mainmenu #content2 .frontcard .card__header {
   position: relative;
-  padding: 30px 30px 40px;
+  padding: 30px 0;
   display: flex;
   justify-content: center;
 }
+#wrapper #container #mainmenu #content2 .frontcard .card__header h2 {
+  color: #FFFFFF;
+  font-size: 24px;
+}
+#wrapper #container #mainmenu #content2 .frontcard .card__header h2 span {
+  color: #1AB060;
+}
 #wrapper #container #mainmenu #content2 .frontcard .card__body {
   position: relative;
-  padding: 30px 30px 40px;
   font-size: 13px;
   display: flex;
   justify-content: center;
+}
+#wrapper #container #mainmenu #content2 .frontcard .card__body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #FFFFFF;
+}
+#wrapper #container #mainmenu #content2 .frontcard .card__body ul li {
+  margin-bottom: 5px;
+  padding: 10px;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 900px) {
@@ -481,5 +540,21 @@ body, html {
   }
   100% {
     transform: translateY(-10px);
+  }
+}
+@-webkit-keyframes Waves {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+@keyframes Waves {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
   }
 }/*# sourceMappingURL=style.css.map */

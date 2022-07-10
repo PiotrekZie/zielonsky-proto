@@ -86,6 +86,7 @@ body, html {
                     padding-left: 24px;
                     padding-right: 16px;
                     cursor: pointer;
+                    
                 }
 
                 a {
@@ -363,7 +364,7 @@ body, html {
                 -webkit-box-shadow: inset 0px 0px 50px 2px rgba(29, 35, 42, 1);
                 -moz-box-shadow: inset 0px 0px 50px 2px rgba(29, 35, 42, 1);
                 box-shadow: inset 0px 0px 50px 2px rgba(29, 35, 42, 1);
-                animation: goradol 1s infinite alternate;
+                animation: goradol 1.5s infinite alternate;
                 
                 cursor: pointer;
 
@@ -396,13 +397,45 @@ body, html {
                         h2 {
                             color: $color_8;
                             font-size: 32px;
+                            span {
+                                color: $lcolor_1;
+                            }
                         }
                     }
                     .firstcard--back {
-                        background: rgb(26,176,96);
-                        background: linear-gradient(0deg, rgba(26,176,96,1) 0%, rgba(44,52,58,0.95) 100%);
                         border-radius: 16px;
                         transform: rotateY(180deg);
+                        position: relative;
+                        .wave {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            background: $color_3;
+
+                            span {
+                                position: absolute;
+                                width: 550px;
+                                height: 500px;
+                                top: 100%;
+
+                                transform: translate(-60%,-75%);
+                                &:nth-child(1){
+                                    animation: Waves 5s linear infinite;
+                                    border-radius: 45%;
+                                    background: $lcolor_1;
+                                }
+                                &:nth-child(2){
+                                    animation: Waves 10s linear infinite;
+                                    border-radius: 40%;
+                                    background: $fcolor_2;
+                                }
+                                &:nth-child(3){
+                                    animation: Waves 15s linear infinite;
+                                    border-radius: 42%;
+                                    background: $fcolor_3;
+                                }
+                            }
+                        }
                     }
                     .card__content {
                         width: 100%;
@@ -410,17 +443,45 @@ body, html {
                     }
                     .card__header {
                         position: relative;
-                        padding: 30px 30px 40px;
+                        padding: 30px 0;
 
                         display: flex;
                         justify-content: center;
+                        h2 {
+                            color: $color_8;
+                            font-size: 24px;
+                            span {
+                                color: $lcolor_1;
+                            }
+                        }
                     }
                     .card__body {
                         position: relative;
-                        padding: 30px 30px 40px;
                         font-size: 13px;
                         display: flex;
                         justify-content: center;
+                        ul {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            background: rgba(255, 255, 255, 0.05);
+                            border-radius: 16px;
+                            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                            backdrop-filter: blur(5px);
+                            -webkit-backdrop-filter: blur(5px);
+                            border: 1px solid $color_8;
+                            
+                            li {
+                                margin-bottom: 5px;
+                                padding: 10px;
+                                font-size: 20px;
+                            }
+                        }
                     }
                 }
             }
@@ -458,16 +519,11 @@ body, html {
         display: none;
         transition: 1s ease-out;
     }
+}  
+@keyframes drop {
+    0% { top: -50%; }
+    100% { top: 110%; }
 }
-@-webkit-keyframes drop {
-    0% { top: -50%; }
-    100% { top: 110%; }
-  }
-  
-  @keyframes drop {
-    0% { top: -50%; }
-    100% { top: 110%; }
-  }
 
 @keyframes fadeInAnimation {
     0% { opacity: 0; }
@@ -485,4 +541,9 @@ body, html {
 @keyframes goradol {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
+}
+
+@keyframes Waves{
+    0%{ transform: translate(-50%,-75%) rotate(0deg); }
+    100%{ transform: translate(-50%,-75%) rotate(360deg);}
 }
