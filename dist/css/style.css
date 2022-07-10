@@ -116,7 +116,7 @@ body, html {
   width: 55%;
 }
 #wrapper #container #mainmenu #content .contpic .title span {
-  color: #1AB060;
+  background-color: #1AB060;
 }
 #wrapper #container #mainmenu #content .contpic .liststyle {
   color: #FFFFFF;
@@ -309,11 +309,77 @@ body, html {
   height: 464px;
   border-radius: 16px;
   margin-left: 32px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #2C343A;
   box-shadow: inset 0px 0px 50px 2px rgb(29, 35, 42);
+  -webkit-animation: goradol 1s infinite alternate;
+          animation: goradol 1s infinite alternate;
+  cursor: pointer;
+}
+#wrapper #container #mainmenu #content2 .frontcard {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#wrapper #container #mainmenu #content2 .frontcard.flipped {
+  transform: rotateY(180deg);
+}
+#wrapper #container #mainmenu #content2 .frontcard .firstcard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+#wrapper #container #mainmenu #content2 .frontcard .firstcard img {
+  width: 200px;
+  height: 180px;
+}
+#wrapper #container #mainmenu #content2 .frontcard .firstcard--front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#wrapper #container #mainmenu #content2 .frontcard .firstcard--front h2 {
+  color: #FFFFFF;
+  font-size: 32px;
+}
+#wrapper #container #mainmenu #content2 .frontcard .firstcard--back {
+  background: rgb(26, 176, 96);
+  background: linear-gradient(0deg, rgb(26, 176, 96) 0%, rgba(44, 52, 58, 0.95) 100%);
+  border-radius: 16px;
+  transform: rotateY(180deg);
+}
+#wrapper #container #mainmenu #content2 .frontcard .card__content {
+  width: 100%;
+  height: 100%;
+}
+#wrapper #container #mainmenu #content2 .frontcard .card__header {
+  position: relative;
+  padding: 30px 30px 40px;
+  display: flex;
+  justify-content: center;
+}
+#wrapper #container #mainmenu #content2 .frontcard .card__body {
+  position: relative;
+  padding: 30px 30px 40px;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 0px) and (max-width: 900px) {
+  #menutop h1 {
+    display: none;
+  }
+
   #burger {
     width: 50px;
     height: 50px;
@@ -332,7 +398,7 @@ body, html {
   }
 }
 @media screen and (min-width: 901px) and (max-width: 1440px) {
-  #burder {
+  #burger {
     display: none;
     transition: 1s ease-out;
   }
@@ -394,6 +460,22 @@ body, html {
   }
 }
 @keyframes Wysuwanie {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@-webkit-keyframes goradol {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes goradol {
   0% {
     transform: translateY(0);
   }
