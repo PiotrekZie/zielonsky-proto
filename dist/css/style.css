@@ -141,92 +141,49 @@ body, html {
   transition: all 0.2s ease;
 }
 #wrapper #container #mainmenu #content .experience {
+  position: relative;
   display: flex;
   justify-content: space-around;
+  overflow: hidden;
   padding: 0;
   margin: 0;
   width: 100%;
-  position: relative;
 }
-#wrapper #container #mainmenu #content .experience .lines {
+#wrapper #container #mainmenu #content .experience .wave {
   position: absolute;
-  top: 0;
+  top: 6rem;
   left: 0;
-  right: 0;
-  height: 100%;
-  margin: auto;
-}
-#wrapper #container #mainmenu #content .experience .lines .line1 {
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  left: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  overflow: hidden;
-}
-#wrapper #container #mainmenu #content .experience .lines .line1::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 15vh;
+  height: 100px;
   width: 100%;
-  top: -50%;
+  background: url(/dist/img/tak.svg);
+  background-size: 2000px 100px;
+  -webkit-animation: wave 13s linear infinite;
+          animation: wave 13s linear infinite;
+  opacity: 0.3;
+}
+#wrapper #container #mainmenu #content .experience .wave2 {
+  position: absolute;
+  top: 6rem;
   left: 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
-  -webkit-animation: drop 7s 0s infinite;
-  animation: drop 7s 0s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-}
-#wrapper #container #mainmenu #content .experience .lines .line2 {
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  left: 20%;
-  background: rgba(255, 255, 255, 0.1);
-  overflow: hidden;
-}
-#wrapper #container #mainmenu #content .experience .lines .line2::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 15vh;
+  height: 100px;
   width: 100%;
-  top: -50%;
+  background: url(/dist/img/tak2.svg);
+  background-size: 2000px 100px;
+  -webkit-animation: wave 14s linear infinite;
+          animation: wave 14s linear infinite;
+  opacity: 0.5;
+}
+#wrapper #container #mainmenu #content .experience .wave3 {
+  position: absolute;
+  top: 6rem;
   left: 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
-  -webkit-animation: drop 9s 0s infinite;
-  animation: drop 9s 0s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-}
-#wrapper #container #mainmenu #content .experience .lines .line3 {
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  left: 80%;
-  background: rgba(255, 255, 255, 0.1);
-  overflow: hidden;
-}
-#wrapper #container #mainmenu #content .experience .lines .line3::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 15vh;
+  height: 100px;
   width: 100%;
-  top: -50%;
-  left: 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
-  -webkit-animation: drop 9.5s 0s infinite;
-  animation: drop 9s 0s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  background: url(/dist/img/tak3.svg);
+  background-size: 2000px 100px;
+  -webkit-animation: wave 15s linear infinite;
+          animation: wave 15s linear infinite;
+  opacity: 0.6;
 }
 #wrapper #container #mainmenu #content .experience .skill {
   width: 556px;
@@ -359,34 +316,34 @@ body, html {
   transform: rotateY(180deg);
   position: relative;
 }
-#wrapper #container #mainmenu #content2 .frontcard .firstcard--back .wave {
+#wrapper #container #mainmenu #content2 .frontcard .firstcard--back .circle {
   position: absolute;
   width: 100%;
   height: 100%;
   background: #2C343A;
 }
-#wrapper #container #mainmenu #content2 .frontcard .firstcard--back .wave span {
+#wrapper #container #mainmenu #content2 .frontcard .firstcard--back .circle span {
   position: absolute;
   width: 550px;
   height: 500px;
   top: 100%;
   transform: translate(-60%, -75%);
 }
-#wrapper #container #mainmenu #content2 .frontcard .firstcard--back .wave span:nth-child(1) {
-  -webkit-animation: Waves 5s linear infinite;
-          animation: Waves 5s linear infinite;
+#wrapper #container #mainmenu #content2 .frontcard .firstcard--back .circle span:nth-child(1) {
+  -webkit-animation: Circles 5s linear infinite;
+          animation: Circles 5s linear infinite;
   border-radius: 45%;
   background: #1AB060;
 }
-#wrapper #container #mainmenu #content2 .frontcard .firstcard--back .wave span:nth-child(2) {
-  -webkit-animation: Waves 10s linear infinite;
-          animation: Waves 10s linear infinite;
+#wrapper #container #mainmenu #content2 .frontcard .firstcard--back .circle span:nth-child(2) {
+  -webkit-animation: Circles 10s linear infinite;
+          animation: Circles 10s linear infinite;
   border-radius: 40%;
   background: #0063AC;
 }
-#wrapper #container #mainmenu #content2 .frontcard .firstcard--back .wave span:nth-child(3) {
-  -webkit-animation: Waves 15s linear infinite;
-          animation: Waves 15s linear infinite;
+#wrapper #container #mainmenu #content2 .frontcard .firstcard--back .circle span:nth-child(3) {
+  -webkit-animation: Circles 15s linear infinite;
+          animation: Circles 15s linear infinite;
   border-radius: 42%;
   background: #004B83;
 }
@@ -438,7 +395,6 @@ body, html {
   #menutop h1 {
     display: none;
   }
-
   #burger {
     width: 50px;
     height: 50px;
@@ -542,19 +498,35 @@ body, html {
     transform: translateY(-10px);
   }
 }
-@-webkit-keyframes Waves {
+@-webkit-keyframes wave {
   0% {
-    transform: translate(-50%, -75%) rotate(0deg);
+    background-position-x: 2000px;
   }
   100% {
-    transform: translate(-50%, -75%) rotate(360deg);
+    background-position-x: 0;
   }
 }
-@keyframes Waves {
+@keyframes wave {
   0% {
-    transform: translate(-50%, -75%) rotate(0deg);
+    background-position-x: 2000px;
   }
   100% {
-    transform: translate(-50%, -75%) rotate(360deg);
+    background-position-x: 0;
+  }
+}
+@-webkit-keyframes Circles {
+  0% {
+    transform: translate(-50%, -70%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -70%) rotate(360deg);
+  }
+}
+@keyframes Circles {
+  0% {
+    transform: translate(-50%, -70%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -70%) rotate(360deg);
   }
 }/*# sourceMappingURL=style.css.map */
