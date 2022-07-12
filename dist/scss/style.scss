@@ -86,6 +86,7 @@ body, html {
                     padding-left: 24px;
                     padding-right: 16px;
                     cursor: pointer;
+                    
                 }
 
                 a {
@@ -186,92 +187,50 @@ body, html {
                     }
                 }
                 .experience {
+                    position: relative;
                     display: flex;
                     justify-content: space-around;
+                    overflow: hidden;
+
                     padding: 0;
                     margin: 0;
                     width: 100%;
-                    position: relative;
-                    .lines {
+
+                    .wave {
                         position: absolute;
-                        top: 0;
+                        top: 6rem;
                         left: 0;
-                        right: 0;
-                        height: 100%;
-                        margin: auto;
-                        .line1 {
-                            position: absolute;
-                            width: 1px;
-                            height: 100%;
-                            left: 50%;
-                            background: rgba(255, 255, 255, 0.1);
-                            overflow: hidden;
-                            &::after {
-                                content: "";
-                                display: block;
-                                position: absolute;
-                                height: 15vh;
-                                width: 100%;
-                                top: -50%;
-                                left: 0;
-                                background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
-                                -webkit-animation: drop 7s 0s infinite;
-                                        animation: drop 7s 0s infinite;
-                                -webkit-animation-fill-mode: forwards;
-                                        animation-fill-mode: forwards;
-                                -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-                                        animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-                              }
-                        }
-                        .line2 {
-                            position: absolute;
-                            width: 1px;
-                            height: 100%;
-                            left: 20%;
-                            background: rgba(255, 255, 255, 0.1);
-                            overflow: hidden;
-                            &::after {
-                                content: "";
-                                display: block;
-                                position: absolute;
-                                height: 15vh;
-                                width: 100%;
-                                top: -50%;
-                                left: 0;
-                                background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
-                                -webkit-animation: drop 9s 0s infinite;
-                                        animation: drop 9s 0s infinite;
-                                -webkit-animation-fill-mode: forwards;
-                                        animation-fill-mode: forwards;
-                                -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-                                        animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-                                }
-                            }
-                        .line3 {
-                            position: absolute;
-                            width: 1px;
-                            height: 100%;
-                            left: 80%;
-                            background: rgba(255, 255, 255, 0.1);
-                            overflow: hidden;
-                            &::after {
-                                content: "";
-                                display: block;
-                                position: absolute;
-                                height: 15vh;
-                                width: 100%;
-                                top: -50%;
-                                left: 0;
-                                background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
-                                -webkit-animation: drop 9.5s 0s infinite;
-                                        animation: drop 9s 0s infinite;
-                                -webkit-animation-fill-mode: forwards;
-                                        animation-fill-mode: forwards;
-                                -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-                                        animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-                                }
-                        }
+                        height: 100px;
+                        width: 100%;
+                        background: url(/dist/img/tak.svg);
+                        background-size: 2000px 100px;
+                        animation: wave 13s linear infinite;
+                        opacity: .3;
                     }
+                    
+                    .wave2 {
+                        position: absolute;
+                        top: 6rem;
+                        left: 0;
+                        height: 100px;
+                        width: 100%;
+                        background: url(/dist/img/tak2.svg);
+                        background-size: 2000px 100px;
+                        animation: wave 14s linear infinite;
+                        opacity: .5;
+                    }
+                    .wave3 {
+                        position: absolute;
+                        top: 6rem;
+                        left: 0;
+                        height: 100px;
+                        width: 100%;
+                        background: url(/dist/img/tak3.svg);
+                        background-size: 2000px 100px;
+                        animation: wave 15s linear infinite;
+                        opacity: .6;
+                    }
+                    
                     .skill {
                         width: 556px;
                         height: 128px;
@@ -363,7 +322,7 @@ body, html {
                 -webkit-box-shadow: inset 0px 0px 50px 2px rgba(29, 35, 42, 1);
                 -moz-box-shadow: inset 0px 0px 50px 2px rgba(29, 35, 42, 1);
                 box-shadow: inset 0px 0px 50px 2px rgba(29, 35, 42, 1);
-                animation: goradol 1s infinite alternate;
+                animation: goradol 1.5s infinite alternate;
                 
                 cursor: pointer;
 
@@ -396,13 +355,45 @@ body, html {
                         h2 {
                             color: $color_8;
                             font-size: 32px;
+                            span {
+                                color: $lcolor_1;
+                            }
                         }
                     }
                     .firstcard--back {
-                        background: rgb(26,176,96);
-                        background: linear-gradient(0deg, rgba(26,176,96,1) 0%, rgba(44,52,58,0.95) 100%);
                         border-radius: 16px;
                         transform: rotateY(180deg);
+                        position: relative;
+                        .circle {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            background: $color_3;
+
+                            span {
+                                position: absolute;
+                                width: 550px;
+                                height: 500px;
+                                top: 100%;
+
+                                transform: translate(-60%,-75%);
+                                &:nth-child(1){
+                                    animation: Circles 5s linear infinite;
+                                    border-radius: 45%;
+                                    background: $lcolor_1;
+                                }
+                                &:nth-child(2){
+                                    animation: Circles 10s linear infinite;
+                                    border-radius: 40%;
+                                    background: $fcolor_2;
+                                }
+                                &:nth-child(3){
+                                    animation: Circles 15s linear infinite;
+                                    border-radius: 42%;
+                                    background: $fcolor_3;
+                                }
+                            }
+                        }
                     }
                     .card__content {
                         width: 100%;
@@ -410,17 +401,45 @@ body, html {
                     }
                     .card__header {
                         position: relative;
-                        padding: 30px 30px 40px;
+                        padding: 30px 0;
 
                         display: flex;
                         justify-content: center;
+                        h2 {
+                            color: $color_8;
+                            font-size: 24px;
+                            span {
+                                color: $lcolor_1;
+                            }
+                        }
                     }
                     .card__body {
                         position: relative;
-                        padding: 30px 30px 40px;
                         font-size: 13px;
                         display: flex;
                         justify-content: center;
+                        ul {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            background: rgba(255, 255, 255, 0.05);
+                            border-radius: 16px;
+                            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                            backdrop-filter: blur(5px);
+                            -webkit-backdrop-filter: blur(5px);
+                            border: 1px solid $color_8;
+                            
+                            li {
+                                margin-bottom: 5px;
+                                padding: 10px;
+                                font-size: 20px;
+                            }
+                        }
                     }
                 }
             }
@@ -458,16 +477,11 @@ body, html {
         display: none;
         transition: 1s ease-out;
     }
+}  
+@keyframes drop {
+    0% { top: -50%; }
+    100% { top: 110%; }
 }
-@-webkit-keyframes drop {
-    0% { top: -50%; }
-    100% { top: 110%; }
-  }
-  
-  @keyframes drop {
-    0% { top: -50%; }
-    100% { top: 110%; }
-  }
 
 @keyframes fadeInAnimation {
     0% { opacity: 0; }
@@ -485,4 +499,14 @@ body, html {
 @keyframes goradol {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
+}
+
+@keyframes wave{
+    0% { background-position-x: 2000px; }
+    100% { background-position-x: 0; }
+}
+
+@keyframes Circles{
+    0%{ transform: translate(-50%,-70%) rotate(0deg); }
+    100%{ transform: translate(-50%,-70%) rotate(360deg);}
 }
