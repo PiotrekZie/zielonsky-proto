@@ -325,7 +325,8 @@ body, html {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #2C343A;
+  background-color: #15191C;
+  box-shadow: inset 0px 0px 50px 2px #2C343A;
 }
 #wrapper #container #mainmenu #content2 .frontcard .firstcard--back .circle span {
   position: absolute;
@@ -407,8 +408,9 @@ body, html {
   border-radius: 16px;
 }
 #wrapper #container #bin .title {
+  display: flex;
   margin: 0;
-  align-self: center;
+  padding: 24px 55px;
 }
 #wrapper #container #bin .title h1 {
   padding: 0;
@@ -421,18 +423,19 @@ body, html {
   display: flex;
   justify-content: space-between;
   border-radius: 0 0 16px 16px;
+  margin: 15px;
+  z-index: 3;
 }
 #wrapper #container #bin .tabs .tab1 {
   text-align: center;
   font-weight: 700;
-  height: 150px;
+  height: auto;
   width: 300px;
-  background-color: #95999C;
   border-radius: 16px;
   transition: transform 550ms;
 }
 #wrapper #container #bin .tabs .tab1:hover {
-  transform: translateY(-90px);
+  transform: translateY(-150px);
 }
 #wrapper #container #bin .tabs .tab1 img {
   width: 300px;
@@ -445,14 +448,13 @@ body, html {
 #wrapper #container #bin .tabs .tab2 {
   text-align: center;
   font-weight: 700;
-  height: 150px;
+  height: auto;
   width: 300px;
-  background-color: #95999C;
   border-radius: 16px;
   transition: transform 550ms;
 }
 #wrapper #container #bin .tabs .tab2:hover {
-  transform: translateY(-90px);
+  transform: translateY(-150px);
 }
 #wrapper #container #bin .tabs .tab2 img {
   width: 300px;
@@ -463,14 +465,42 @@ body, html {
   color: #FFFFFF;
 }
 #wrapper #container #bin .tabs .tab3 {
-  height: 150px;
+  text-align: center;
+  font-weight: 700;
+  height: auto;
   width: 300px;
-  background-color: #95999C;
+  border-radius: 16px;
+  transition: transform 550ms;
+}
+#wrapper #container #bin .tabs .tab3:hover {
+  transform: translateY(-150px);
+}
+#wrapper #container #bin .tabs .tab3 img {
+  width: 300px;
+  border-radius: 16px;
+}
+#wrapper #container #bin .tabs .tab3 a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 #wrapper #container #bin .tabs .tab4 {
-  height: 150px;
+  text-align: center;
+  font-weight: 700;
+  height: auto;
   width: 300px;
-  background-color: #95999C;
+  border-radius: 16px;
+  transition: transform 550ms;
+}
+#wrapper #container #bin .tabs .tab4:hover {
+  transform: translateY(-150px);
+}
+#wrapper #container #bin .tabs .tab4 img {
+  width: 300px;
+  border-radius: 16px;
+}
+#wrapper #container #bin .tabs .tab4 a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 @media screen and (min-width: 0px) and (max-width: 900px) {
