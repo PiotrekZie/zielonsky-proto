@@ -127,10 +127,11 @@ body, html {
         }
         #mainmenu {
             width: 100vw;
-            min-height: 80vh;
-            margin:30px 58px;
+            // min-height: 80vh;
+            margin: 30px 28px;
 
             display: flex;
+            flex-wrap:wrap;
         
             border-radius: 16px;
 
@@ -139,7 +140,7 @@ body, html {
                 height: 496px;
                 border-radius: 16px;
 
-                background-color: $lcolor_1;
+                // background-color: $lcolor_1;
                 -webkit-box-shadow: inset 0px 0px 50px 2px rgba(44, 52, 58, 1);
                 -moz-box-shadow: inset 0px 0px 50px 2px rgba(44, 52, 58, 1);
                 box-shadow: inset 0px 0px 50px 2px rgba(44, 52, 58, 1);
@@ -155,10 +156,12 @@ body, html {
                     -webkit-box-shadow: inset 0px 0px 50px 2px rgba(29, 35, 42, 1);
                     -moz-box-shadow: inset 0px 0px 50px 2px rgba(29, 35, 42, 1);
                     box-shadow: inset 0px 0px 50px 2px rgba(29, 35, 42, 1);
+
                     .title {
                         margin: 0;
                         padding: 55px 38px;
                         width: 55%;
+
                         span {
                             background-color: $lcolor_1;
                         }
@@ -200,11 +203,14 @@ body, html {
                         position: absolute;
                         top: 6rem;
                         left: 0;
-                        height: 100px;
+                        height: 65px;
                         width: 100%;
-                        background: url(./dist/img/tak.svg);
+                        background: url(/dist/img/tak.svg);
                         background-size: 2000px 100px;
+                        border-radius: 16px;
                         animation: wave 13s linear infinite;
+                        -webkit-animation:wave 13s linear infinite;
+                        -moz-animation:wave 13s linear infinite;
                         opacity: .3;
                     }
                     
@@ -212,23 +218,29 @@ body, html {
                         position: absolute;
                         top: 6rem;
                         left: 0;
-                        height: 100px;
+                        height: 65px;
                         width: 100%;
-                        background: url(./dist/img/tak2.svg);
+                        background: url(/dist/img/tak2.svg);
                         background-size: 2000px 100px;
+                        border-radius: 16px;
                         animation: wave 14s linear infinite;
+                        -webkit-animation:wave 14s linear infinite;
+                        -moz-animation:wave 14s linear infinite;
                         opacity: .5;
                     }
                     .wave3 {
                         position: absolute;
                         top: 6rem;
                         left: 0;
-                        height: 100px;
+                        height: 65px;
                         width: 100%;
-                        background: url(./dist/img/tak3.svg);
+                        background: url(/dist/img/tak3.svg);
                         background-size: 2000px 100px;
+                        border-radius: 16px;
                         animation: wave 15s linear infinite;
-                        opacity: .6;
+                        -webkit-animation:wave 15s linear infinite;
+                        -moz-animation:wave 15s linear infinite;
+                        opacity: .5;
                     }
                     
                     .skill {
@@ -368,7 +380,11 @@ body, html {
                             position: absolute;
                             width: 100%;
                             height: 100%;
-                            background: $color_3;
+                            
+                            background-color: $color_1;
+                            -webkit-box-shadow: inset 0px 0px 50px 2px $color_3;
+                            -moz-box-shadow: inset 0px 0px 50px 2px $color_3;
+                            box-shadow: inset 0px 0px 50px 2px $color_3;
 
                             span {
                                 position: absolute;
@@ -440,6 +456,124 @@ body, html {
                                 font-size: 20px;
                             }
                         }
+                    }
+                }
+            }
+        }
+        #bin {
+            margin: 0 28px;
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            background-color: $color_3;
+            -webkit-box-shadow: inset 0px 0px 50px 2px rgba(29, 35, 42, 1);
+            -moz-box-shadow: inset 0px 0px 50px 2px rgba(29, 35, 42, 1);
+            box-shadow: inset 0px 0px 50px 2px rgba(29, 35, 42, 1);
+            border-radius: 16px;
+            .title {
+                display: flex;
+                margin: 0;
+                padding: 24px 55px;
+                h1 {
+                    padding: 0;
+                    margin: 0;
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .tabs {
+                display: flex;
+                justify-content: space-between;
+                border-radius: 0 0 16px 16px;
+                margin: 15px;
+
+                z-index: 3;
+                .tab1 {
+                    text-align: center;
+                    font-weight: 700;
+                    
+                    height: auto;
+                    width: 300px;
+                    
+                    border-radius: 16px;
+                    transition: transform 550ms;
+                    &:hover {
+                        transform: translateY(-150px);
+                    }
+                    img {
+                        width: 300px;
+                        border-radius: 16px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $color_8;
+                    }
+                }
+                .tab2 {
+                    text-align: center;
+                    font-weight: 700;
+                    
+                    height: auto;
+                    width: 300px;
+                    
+                    border-radius: 16px;
+                    transition: transform 550ms;
+                    &:hover {
+                        transform: translateY(-150px);
+                    }
+                    img {
+                        width: 300px;
+                        border-radius: 16px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $color_8;
+                    }
+                }
+                .tab3 {
+                    text-align: center;
+                    font-weight: 700;
+                    
+                    height: auto;
+                    width: 300px;
+                    
+                    border-radius: 16px;
+                    transition: transform 550ms;
+                    &:hover {
+                        transform: translateY(-150px);
+                    }
+                    img {
+                        width: 300px;
+                        border-radius: 16px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $color_8;
+                    }
+                }
+                .tab4 {
+                    text-align: center;
+                    font-weight: 700;
+                    
+                    height: auto;
+                    width: 300px;
+                    
+                    border-radius: 16px;
+                    transition: transform 550ms;
+                    &:hover {
+                        transform: translateY(-150px);
+                    }
+                    img {
+                        width: 300px;
+                        border-radius: 16px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $color_8;
                     }
                 }
             }
