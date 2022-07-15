@@ -200,10 +200,14 @@ body, html {
   z-index: 1;
 }
 #wrapper #container #mainmenu #content .experience .skill .skill1 {
+  cursor: pointer;
+}
+#wrapper #container #mainmenu #content .experience .skill .skill1 a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 #wrapper #container #mainmenu #content .experience .skill .skill1 img {
   width: 80px;
@@ -219,10 +223,14 @@ body, html {
   transition: 1s ease-out;
 }
 #wrapper #container #mainmenu #content .experience .skill .skill2 {
+  cursor: pointer;
+}
+#wrapper #container #mainmenu #content .experience .skill .skill2 a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 #wrapper #container #mainmenu #content .experience .skill .skill2 img {
   width: 80px;
@@ -238,10 +246,14 @@ body, html {
   transition: 1s ease-out;
 }
 #wrapper #container #mainmenu #content .experience .skill .skill3 {
+  cursor: pointer;
+}
+#wrapper #container #mainmenu #content .experience .skill .skill3 a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 #wrapper #container #mainmenu #content .experience .skill .skill3 img {
   width: 80px;

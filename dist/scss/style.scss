@@ -253,10 +253,14 @@ body, html {
                         align-items: center;
                         z-index: 1;
                         .skill1 {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
                             cursor: pointer;
+                            a {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                text-decoration: none;
+                                color: $color_8;
+                            }
                             img {
                             width: 80px;
                             }
@@ -265,16 +269,21 @@ body, html {
                                 padding: 0;
                             }
                             &:hover {
+                                
                                 font-weight: 500;
                                 animation: Wysuwanie 1s infinite  alternate;
                                 transition: 1s ease-out;
                             }
                         }
                         .skill2 {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
                             cursor: pointer;
+                            a {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                text-decoration: none;
+                                color: $color_8;
+                            }
                             img {
                             width: 80px;
                             }
@@ -283,16 +292,21 @@ body, html {
                                 padding: 0;
                             }
                             &:hover {
+                                
                                 font-weight: 500;
                                 animation: Wysuwanie 1s infinite  alternate;
                                 transition: 1s ease-out;
                             }
                         }
                         .skill3 {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
                             cursor: pointer;
+                            a {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                text-decoration: none;
+                                color: $color_8;
+                            }
                             img {
                             width: 80px;
                             }
@@ -301,6 +315,7 @@ body, html {
                                 padding: 0;
                             }
                             &:hover {
+                                
                                 font-weight: 500;
                                 animation: Wysuwanie 1s infinite  alternate;
                                 transition: 1s ease-out;
