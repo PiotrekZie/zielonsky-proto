@@ -49,7 +49,7 @@ body, html {
 
             transition: .8s ease-out;
 
-            background-image: url(/dist/img/Logo_color.svg);
+            background-image: url(../../dist/img/Logo_color.svg);
             -webkit-box-shadow: inset 0px -20px 44px 54px rgba(21, 25, 28, 1);
             -moz-box-shadow: inset 0px -20px 44px 54px rgba(21, 25, 28, 1);
             box-shadow: inset 0px -20px 44px 54px rgba(21, 25, 28, 1);
@@ -205,7 +205,7 @@ body, html {
                         left: 0;
                         height: 65px;
                         width: 100%;
-                        background: url(/dist/img/tak.svg);
+                        background: url(../../dist/img/wave.svg);
                         background-size: 2000px 100px;
                         border-radius: 16px;
                         animation: wave 13s linear infinite;
@@ -220,7 +220,7 @@ body, html {
                         left: 0;
                         height: 65px;
                         width: 100%;
-                        background: url(/dist/img/tak2.svg);
+                        background: url(../../dist/img/wave2.svg);
                         background-size: 2000px 100px;
                         border-radius: 16px;
                         animation: wave 14s linear infinite;
@@ -234,7 +234,7 @@ body, html {
                         left: 0;
                         height: 65px;
                         width: 100%;
-                        background: url(/dist/img/tak3.svg);
+                        background: url(../../dist/img/wave3.svg);
                         background-size: 2000px 100px;
                         border-radius: 16px;
                         animation: wave 15s linear infinite;

@@ -27,7 +27,7 @@ body, html {
   justify-content: center;
   padding: 24px 43px;
   transition: 0.8s ease-out;
-  background-image: url(/dist/img/Logo_color.svg);
+  background-image: url(../../dist/img/Logo_color.svg);
   box-shadow: inset 0px -20px 44px 54px rgb(21, 25, 28);
   opacity: 1;
 }
@@ -154,7 +154,7 @@ body, html {
   left: 0;
   height: 65px;
   width: 100%;
-  background: url(/dist/img/tak.svg);
+  background: url(../../dist/img/wave.svg);
   background-size: 2000px 100px;
   border-radius: 16px;
   animation: wave 13s linear infinite;
@@ -168,7 +168,7 @@ body, html {
   left: 0;
   height: 65px;
   width: 100%;
-  background: url(/dist/img/tak2.svg);
+  background: url(../../dist/img/wave2.svg);
   background-size: 2000px 100px;
   border-radius: 16px;
   animation: wave 14s linear infinite;
@@ -182,7 +182,7 @@ body, html {
   left: 0;
   height: 65px;
   width: 100%;
-  background: url(/dist/img/tak3.svg);
+  background: url(../../dist/img/wave3.svg);
   background-size: 2000px 100px;
   border-radius: 16px;
   animation: wave 15s linear infinite;
